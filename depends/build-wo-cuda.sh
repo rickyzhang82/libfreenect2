@@ -1,6 +1,6 @@
 cd ..
-rm -rf build/
+sudo rm -rf build/
 mkdir build && cd build
-cmake .. 
+cmake -DENABLE_CUDA=OFF .. 
 make -j 8
 sudo make install
